@@ -1,13 +1,7 @@
-import { Metadata } from "next";
 import { columns } from "@/components/user/columns";
 import DataTable from "@/components/user/DataTable";
 import { getUsers } from "@/services/userService";
 import LogoutButton from "@/components/user/LogoutButton";
-
-export const metadata: Metadata = {
-  title: "Tasks",
-  description: "A task and issue tracker build using Tanstack Table.",
-};
 
 export default async function Home() {
   const users = await getUsers();

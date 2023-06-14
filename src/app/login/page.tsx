@@ -1,13 +1,7 @@
-import { Metadata } from "next";
 import Image from "next/image";
 import { Command } from "lucide-react";
 
 import { UserAuthForm } from "@/components/UserAuthForm";
-
-export const metadata: Metadata = {
-  title: "Authentication",
-  description: "Authentication forms built using the components.",
-};
 
 export default function Login() {
   return (
